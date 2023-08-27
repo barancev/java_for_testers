@@ -7,5 +7,7 @@ public class Hello {
         var configFile = new File("sandbox/build.gradle");
         System.out.println(configFile.getAbsolutePath());
         System.out.println(configFile.exists());
+
+        System.out.println(new File("").getAbsolutePath());
     }
 }
