@@ -1,7 +1,9 @@
 package ru.stqa.addressbook.manager;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.Select;
 import ru.stqa.addressbook.model.ContactData;
+import ru.stqa.addressbook.model.GroupData;
 
 public class ContactHelper extends HelperBase {
     public ContactHelper(ApplicationManager manager) {
@@ -13,6 +15,18 @@ public class ContactHelper extends HelperBase {
         fillContactForm(contact);
         submitContactCreation();
         returnToHomePage();
+    }
+
+    public void create(ContactData contact, GroupData group) {
+        initContactCreation();
+        fillContactForm(contact);
+        selectGroup(group);
+        submitContactCreation();
+        returnToHomePage();
+    }
+
+    private void selectGroup(GroupData group) {
+        new Select(manager.driver.findElement(By.name("new_group"))).selectByValue(group.id());
     }
 
     private void openHomePage() {
