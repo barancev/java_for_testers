@@ -13,6 +13,8 @@ public class ContactCreationTests extends TestBase {
         var contact = new ContactData()
                 .withFirstname(CommonFunctions.randomString(10))
                 .withLastname(CommonFunctions.randomString(10))
+                .withMobile("123456")
+                .withWork("654321")
                 .withPhoto(randomFile("src/test/resources/images"));
         app.contacts().create(contact);
     }
