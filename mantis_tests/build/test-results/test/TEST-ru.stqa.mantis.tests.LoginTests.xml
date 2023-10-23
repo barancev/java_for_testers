@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.stqa.mantis.tests.LoginTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-10-18T14:25:51" hostname="ALEXEI-PC-9" time="6.702">
+  <properties/>
+  <testcase name="canLogin()" classname="ru.stqa.mantis.tests.LoginTests" time="6.702"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Oct 18, 2023 5:25:51 PM org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
+INFO: Driver logs no longer sent to console by default; https://www.selenium.dev/documentation/webdriver/drivers/service/#setting-log-output
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+</testsuite>
