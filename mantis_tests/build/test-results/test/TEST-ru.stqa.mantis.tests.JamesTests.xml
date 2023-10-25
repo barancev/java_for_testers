@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.stqa.mantis.tests.JamesTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-10-25T13:32:28" hostname="ALEXEI-PC-9" time="0.985">
-  <properties/>
-  <testcase name="canCreateUser()" classname="ru.stqa.mantis.tests.JamesTests" time="0.985"/>
-  <system-out><![CDATA[AddUser command executed sucessfully in 359 ms.
-
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
