@@ -1,18 +1,13 @@
 package ru.stqa.mantis.manager;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import ru.stqa.mantis.common.CommonFunctions;
-
-import java.time.Duration;
 
 public class UserHelper extends HelperBase {
     public UserHelper(ApplicationManager manager) {
         super(manager);
     }
 
-    public void startCreation(String user) {
-        var email = String.format("%s@localhost", user);
+    public void startCreation(String user, String email) {
         if (!manager.session().isLoggedIn()) {
             manager.session().login(manager.property("web.username"), manager.property("web.password"));
         }
