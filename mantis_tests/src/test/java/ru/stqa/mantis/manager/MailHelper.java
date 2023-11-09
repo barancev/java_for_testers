@@ -51,7 +51,9 @@ public class MailHelper extends HelperBase {
 
     private static Folder getInbox(String username, String password) {
         try {
-            var session = Session.getInstance(new Properties());
+            var properties = new Properties();
+            properties.setProperty("mail.pop3.port", "8110");
+            var session = Session.getInstance(properties);
             Store store = session.getStore("pop3");
             store.connect("localhost", username, password);
             var inbox = store.getFolder("INBOX");
